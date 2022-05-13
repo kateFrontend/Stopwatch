@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 500px;
+    padding: 30px 0;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.displayTimer{
+    width: 90%;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    padding: 40px 0;
+    font-size: 55px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.buttons{
+    width: 90%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    width: 120px;
+    height: 45px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+
+  @media all and (max-width: 500px) {
+    .container{
+        min-width: 320px;
+    }
+
+    .displayTimer{
+        font-size: 35px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button{
+        margin: 10px;
+    }
+    
+  }
